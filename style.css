@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    background-color: #111;
+    overflow: hidden;
+    /* cursor: none; */
+}
+
+span {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    text-shadow: 0 0 10px #fff,
+        0 0 15px #fff,
+        0 0 20px #fff
+}
+
+h5 {
+    display: flex;
+    gap: 3px;
+    color: white;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    animation: 1s infinite alternate blink;
+}
+
+h5 p {
+    color: yellow;
+}
+
+@keyframes blink {
+    50% {
+        opacity: .2;
+    }
+}
+
+svg {
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .05;
+    width: 20rem;
+    font-weight: 700;
+}
+
+svg text {
+    font-size: 5rem;
+    stroke-width: 2;
+    letter-spacing: -6px;
+}
+
+svg text.text-body {
+    stroke: white;
+    animation: 2s infinite alternate animate-stroke;
+}
+
+@keyframes animate-stroke {
+    0% {
+        fill: transparent;
+        stroke: white;
+        stroke-width: 3;
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 32%;
+    }
+
+    50% {
+        fill: transparent;
+        stroke: white;
+        stroke-width: 3;
+    }
+
+    80%,
+    100% {
+        fill: white;
+        stroke: transparent;
+        stroke-width: 0;
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 32% 0;
+    }
+}
+
+
+
+/* Shery js code */
+.mousefollower {
+    height: 0;
+    width: 0;
+}
