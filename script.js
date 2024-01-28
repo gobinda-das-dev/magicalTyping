@@ -50,16 +50,7 @@ setTimeout(() => {
 
 Shery.mouseFollower();
 Shery.makeMagnet("svg text");
-
-document.querySelector("body").onmouseenter = () => {
-    gsap.to(".mousefollower", {
-        height: 14,
-        width: 14,
-    })
-}
-document.querySelector("body").onmouseleave = () => {
-    gsap.to(".mousefollower", {
-        height: 0,
-        width: 0,
-    })
-}
+gsap.set(".mousefollower", {
+    height: 0,
+    width: 0,
+})
