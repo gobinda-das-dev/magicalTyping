@@ -37,19 +37,20 @@ document.addEventListener('keydown', function (event) {
             });
 
         document.body.appendChild(span);
-        h5.remove()
+        h5.remove();
     }
 });
 
-
-gsap.timeline()
-    .to("h5", {
-        top: "100%",
-        duration: 20,
-        onComplete: () => {
-            h5.remove()
-        }
-    })
+// setTimeout(() => {
+//     let h5 = document.querySelector("h5");
+//     gsap.timeline()
+//         .to("h5", {
+//             top: "100%",
+//             onComplete: () => {
+//                 h5.remove();
+//             }
+//         })
+// }, 2000);
 
 Shery.mouseFollower();
 Shery.makeMagnet("svg text");
