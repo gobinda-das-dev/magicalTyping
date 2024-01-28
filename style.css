@@ -33,8 +33,9 @@ h5 {
     gap: 3px;
     color: white;
     white-space: nowrap;
+    font-size: 20px;
     position: absolute;
-    bottom: 20px;
+    top: -10%;
     left: 50%;
     transform: translate(-50%, 0);
     animation: 1s infinite alternate blink;
